@@ -4,11 +4,11 @@
 int GetNumber()
 {
     Console.WriteLine("Введите число: ");
-    int number = int.Parse(Console.ReadLine() ?? "0");
+    int number = int.Parse(Console.ReadLine() ?? "0"); // Этот метод для получения десятичного числа
     return number;
 }
 
-void ShowNumber(int[] Array, int PowNumber)
+void ShowNumber(int[] Array, int PowNumber) // Выводит массив на экран
 {
     for(int k = 0; k < PowNumber; k++)
     {
@@ -16,7 +16,7 @@ void ShowNumber(int[] Array, int PowNumber)
     }
 }
 
-int number = GetNumber();
+int number = GetNumber(); // Определяем размер массива, в который будем записывать единички и нолики
 int Pow = 0;
 int i = 0;
 while(Math.Pow(2, i) <= number)
@@ -27,7 +27,7 @@ while(Math.Pow(2, i) <= number)
 Pow++;
 Console.WriteLine($"Степень равна {Pow - 1}");
 
-int[] Array = new int[Pow];
+int[] Array = new int[Pow]; // Заполняем массив остатками от деления на 2
 int result = 0;
 for(int j = Pow-1; j >= 0; j--)
 {
@@ -38,3 +38,5 @@ for(int j = Pow-1; j >= 0; j--)
 
 ShowNumber(Array, Pow);
 Console.WriteLine();
+
+// Работает, но че-то как-то сложновато:))) Код очень длинный.
