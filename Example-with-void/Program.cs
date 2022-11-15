@@ -16,6 +16,15 @@ int[] CreateArray(int length)
     }
     return array;
 }
+
+// Можно этот код переписать так и все будет работать аналогично!
+// int[] CreateArray(int length)
+// {
+//     int[] array = new int[length];
+//     FillArray(array);
+//     return array;
+// }
+
 void PrintArray(int[] array)
 {
     for(int i=0;i<array.Length;i++)
