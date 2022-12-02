@@ -51,7 +51,7 @@ int count = 0;
 while (length > 0)
 {
     Console.Write("Введите число: ");
-    string num = Console.ReadLine();
+    string num = Console.ReadLine() ?? "0";
     int number = int.Parse(num);
     if (number > 0)
         count++;
