@@ -13,9 +13,9 @@ void PrintArray(double[,] array)
             Console.Write($"{array[i,j]} )  "); 
     }
 }
-double Scale(double[,] arr, double k)
+double[,] Scale(double[,] arr, double k)
 {
-    double [,] NewArray = new double[arr.GetLength(0),arr.GetLength(1)];
+    double[,] NewArray = new double[arr.GetLength(0), arr.GetLength(1)];
     for (int i = 0; i < arr.GetLength(0); i++)
     {
        for (int j = 0; j < arr.GetLength(1); j++)
