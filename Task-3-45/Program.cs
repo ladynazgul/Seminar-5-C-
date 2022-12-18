@@ -1,6 +1,6 @@
 ﻿// Показать числа Фибоначчи
 
-int N = new Random().Next(1, 30);
+int N = 20; // new Random().Next(1, 30);
 Console.WriteLine($"Сколько чисел показать: {N}");
 
 int[] GetFibonacci(int N)
